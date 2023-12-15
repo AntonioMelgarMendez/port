@@ -1,0 +1,27 @@
+/* Estilos para la barra de búsqueda */
+nav input {
+  color: #a5a4a4; /* Texto gris */
+  border: none;
+  background-color: transparent; /* Hace el fondo del input transparente */
+  padding: 8px; /* Ajusta el espacio interno del input */
+  margin-left: 8px; /* Ajusta el espacio a la izquierda del input */
+  font-size: 18px; /* Ajusta el tamaño del texto */
+}
+
+/* Estilos para el contenedor de la barra */
+.sizewidth {
+  width: 82%;
+  margin: 20px auto; /* Ajusta el margen superior e inferior */
+  /* Color y grosor del borde */
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);/* Redondea las esquinas del borde */
+}
+
+/* Estilos para la animación de la barra de búsqueda */
+
+
+.search:hover {
+
+  color: #a5a4a4; 
+  cursor: pointer;
+}

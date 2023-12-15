@@ -1,0 +1,116 @@
+/* project.css */
+/* project.css */
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Ajusta la distancia entre los elementos */
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+}
+
+  .day{
+    color:rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 25px;
+    font: bolder;
+
+  }
+  .dateAndMonth{
+    color:rgba(255, 255, 255, 0.9);
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font: bolder;
+  }
+  .custom-item {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    max-width: 300px;
+   
+  }
+  
+  .custom-image {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10%;
+    margin-bottom: 10px;
+  }
+  
+  .custom-title {
+    font-size: 1.5em;
+    color:rgba(255, 255, 255, 0.6);
+    margin-bottom: 5px;
+  }
+  
+  .custom-subtitle {
+    font-size: 1.2em;
+    color:rgba(255, 255, 255, 0.6);
+  }
+  
+  /* Estilos para el reloj */
+  .clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 80%;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: auto;
+  }
+  
+  .clock-text {
+    font-size: 2em;
+    color:rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-size: 75px;
+    font: bolder;
+  }
+  
+  .custom-item {
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px; /* Reduce el padding para reducir el margen */
+    margin: auto; /* Centra el elemento horizontalmente */
+    max-width: 150px; /* Ajusta el máximo ancho según tus preferencias */
+    max-height: 300px; /* Ajusta la altura máxima según tus preferencias */
+    overflow: hidden; 
+    transition: transform 0.3s ease-in-out;
+
+}
+.custom-item:hover{
+  transform: scale(0.9);
+}
+
+
+
+.custom-image {
+  width: 100%;
+  max-width: 200px; /* Ajusta el tamaño máximo de la imagen según tus preferencias */
+  height: auto;
+  margin-bottom:8px;
+}
+.custom-title {
+    font-size: 1.5em; /* Ajusta el tamaño del título según tus preferencias */
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.custom-subtitle {
+    font-size: 1.2em; /* Ajusta el tamaño del subtítulo según tus preferencias */
+    color:rgba(255, 255, 255, 0.9);
+    overflow: hidden; /* Evita que el texto sobresalga del contenedor */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}

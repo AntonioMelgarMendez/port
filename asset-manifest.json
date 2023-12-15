@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/port/static/css/main.774a5c60.css",
+    "main.js": "/port/static/js/main.1bc781ed.js",
+    "static/js/496.982cc2b7.chunk.js": "/port/static/js/496.982cc2b7.chunk.js",
+    "static/media/spiderman.png": "/port/static/media/spiderman.b791d34406fe356ffbef.png",
+    "static/media/background.jpg": "/port/static/media/background.954804eabc50a4a11c45.jpg",
+    "static/media/csharp.png": "/port/static/media/csharp.f87f560b96cc76711bb9.png",
+    "static/media/profile1.png": "/port/static/media/profile1.363c7fcdb39dc9fca8f6.png",
+    "static/media/uno.png": "/port/static/media/uno.4f100685566acaf8426b.png",
+    "static/media/setting.png": "/port/static/media/setting.8119d51078130f20250b.png",
+    "static/media/vite.png": "/port/static/media/vite.f9974722613f988ab6a3.png",
+    "static/media/c++.png": "/port/static/media/c++.053a898d752aef72651e.png",
+    "static/media/twice.png": "/port/static/media/twice.f9f24bcb1ef281b1b249.png",
+    "static/media/nodejs.png": "/port/static/media/nodejs.e328955d6bbbf3ebc72b.png",
+    "static/media/ts.png": "/port/static/media/ts.27d81a586e4448a5e671.png",
+    "static/media/css.png": "/port/static/media/css.8ea58d31a9d39dd59031.png",
+    "static/media/react.png": "/port/static/media/react.885778c4c1d2856e1ea1.png",
+    "static/media/python.png": "/port/static/media/python.448fb2a83595fa5c5c8a.png",
+    "static/media/about.png": "/port/static/media/about.1757e151203c35a68836.png",
+    "static/media/lupa.png": "/port/static/media/lupa.746fd223a07a3b56184c.png",
+    "static/media/skills.png": "/port/static/media/skills.39c24327b6db18999cae.png",
+    "static/media/tailwind.png": "/port/static/media/tailwind.14d608076f05007ca962.png",
+    "static/media/home.png": "/port/static/media/home.5c44a8fe476b412395be.png",
+    "static/media/html.png": "/port/static/media/html.ff3cf75e3b7cbb4ea77c.png",
+    "static/media/js.png": "/port/static/media/js.266bd9fb2663dcc057b4.png",
+    "index.html": "/port/index.html",
+    "main.774a5c60.css.map": "/port/static/css/main.774a5c60.css.map",
+    "main.1bc781ed.js.map": "/port/static/js/main.1bc781ed.js.map",
+    "496.982cc2b7.chunk.js.map": "/port/static/js/496.982cc2b7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.774a5c60.css",
+    "static/js/main.1bc781ed.js"
+  ]
+}

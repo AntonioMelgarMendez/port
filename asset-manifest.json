@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/port/static/css/main.060c19bd.css",
-    "main.js": "/port/static/js/main.e5fd4767.js",
+    "main.css": "/port/static/css/main.d4a0b9e0.css",
+    "main.js": "/port/static/js/main.c750e40e.js",
     "static/js/496.982cc2b7.chunk.js": "/port/static/js/496.982cc2b7.chunk.js",
+    "static/media/prop1.png": "/port/static/media/prop1.79247613278ec32289c8.png",
     "static/media/spiderman.png": "/port/static/media/spiderman.b791d34406fe356ffbef.png",
-    "static/media/profile.png": "/port/static/media/profile.ddf8c2c91425250df81d.png",
     "static/media/background.jpg": "/port/static/media/background.954804eabc50a4a11c45.jpg",
     "static/media/csharp.png": "/port/static/media/csharp.f87f560b96cc76711bb9.png",
     "static/media/profile1.png": "/port/static/media/profile1.363c7fcdb39dc9fca8f6.png",
@@ -29,12 +29,12 @@
     "static/media/html.png": "/port/static/media/html.ff3cf75e3b7cbb4ea77c.png",
     "static/media/js.png": "/port/static/media/js.266bd9fb2663dcc057b4.png",
     "index.html": "/port/index.html",
-    "main.060c19bd.css.map": "/port/static/css/main.060c19bd.css.map",
-    "main.e5fd4767.js.map": "/port/static/js/main.e5fd4767.js.map",
+    "main.d4a0b9e0.css.map": "/port/static/css/main.d4a0b9e0.css.map",
+    "main.c750e40e.js.map": "/port/static/js/main.c750e40e.js.map",
     "496.982cc2b7.chunk.js.map": "/port/static/js/496.982cc2b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.060c19bd.css",
-    "static/js/main.e5fd4767.js"
+    "static/css/main.d4a0b9e0.css",
+    "static/js/main.c750e40e.js"
   ]
 }

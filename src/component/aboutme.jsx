@@ -2,7 +2,7 @@
 
 import React from 'react';
 import '../style/aboutme.css';
-import profileImage from '../sources/profile.png'; // Reemplaza con la ruta correcta de tu imagen
+import profileImage from '../sources/prop1.png'; // Reemplaza con la ruta correcta de tu imagen
 import linkedin from "../sources/linkedin.png";
 import facebook from "../sources/facebook.png";
 import instagram from "../sources/instagram.png";
@@ -11,11 +11,14 @@ import Calendar from './calendar';
 const Aboutme = () => {
   return (
     <div>
-
+      <div className='marginCalendar'>
+       <Calendar/>
+      </div>
       <div className="aboutme-container">
+      <img className='imagecontent' src={profileImage}/>
         <div className="aboutme-content">
 
-
+        
           <h2 className="aboutme-title">Antonio Méndez</h2>
           <p className="aboutme-description1">
           Software Developer
@@ -46,9 +49,7 @@ const Aboutme = () => {
       
         </div>
       </div>
-      <div className='marginCalendar'>
-       <Calendar/>
-      </div>
+
     </div>
   );
 };

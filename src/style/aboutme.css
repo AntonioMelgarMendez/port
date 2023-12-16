@@ -2,6 +2,11 @@
   margin-top: 30px;
   margin-bottom:30px;
 }/* aboutme.css */
+.imagecontent{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
 .aboutme-container {
   background-color: rgba(0, 0, 0,1);
   padding: 20px;
@@ -16,7 +21,7 @@
   align-items: center;
   justify-content: center;
   margin: auto;
-  margin-top: 50px;
+
   margin-bottom:35px;
   color:rgba(255, 255, 255, 0.9);
 }

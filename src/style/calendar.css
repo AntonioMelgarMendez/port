@@ -82,7 +82,7 @@
   font-family: 'Arial', sans-serif;
   background: rgba(255, 255, 255, 1);
   border-radius: 10%;/* Añade bordes redondeados */
-  width: 170px;
+  width: 150px;
   display: inline-block; /* Permite que dos calendarios se muestren en la misma línea */
 }
 

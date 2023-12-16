@@ -6,11 +6,13 @@ import Skills from './component/skills';
 import Footer from './component/footer';
 import Project from './component/project';
 import Aboutme from './component/aboutme';
+import Home from './component/home';
+// ... (importaciones)
 
 function App() {
   const [showProfile, setShowProfile] = useState(true);
   const [startX, setStartX] = useState(null);
-  const [currentContent, setCurrentContent] = useState('Skills');
+  const [currentContent, setCurrentContent] = useState('Home'); // Inicia con 'home'
 
   const handleTouchStart = (event) => {
     setStartX(event.touches[0].clientX);
@@ -20,20 +22,19 @@ function App() {
     const currentX = event.touches[0].clientX;
     const deltaX = currentX - startX;
 
-    // Establece una distancia mínima para considerar el deslizamiento
     const minDeltaX = 50;
 
     if (deltaX > minDeltaX) {
-      // Cambia al contenido de la derecha
       setCurrentContent((prevContent) => {
+        if (prevContent === 'Home') return 'Skills';
         if (prevContent === 'Skills') return 'Project';
         if (prevContent === 'Project') return 'Aboutme';
-        if (prevContent === 'Aboutme') return 'Skills';
+        if (prevContent === 'Aboutme') return 'Home';
       });
     } else if (deltaX < -minDeltaX) {
-      // Cambia al contenido de la izquierda
       setCurrentContent((prevContent) => {
-        if (prevContent === 'Skills') return 'Aboutme';
+        if (prevContent === 'Home') return 'Aboutme';
+        if (prevContent === 'Skills') return 'Home';
         if (prevContent === 'Project') return 'Skills';
         if (prevContent === 'Aboutme') return 'Project';
       });
@@ -41,7 +42,6 @@ function App() {
   };
 
   const handleTouchEnd = () => {
-    // Restablece la posición inicial al finalizar el deslizamiento
     setStartX(null);
   };
 
@@ -58,6 +58,7 @@ function App() {
     >
       <Navbar />
       {showProfile && <Profile onClose={handleCloseProfile} />}
+      {currentContent === 'Home' && <Home />}
       {currentContent === 'Skills' && <Skills />}
       {currentContent === 'Project' && <Project />}
       {currentContent === 'Aboutme' && <Aboutme />}

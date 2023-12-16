@@ -1,0 +1,68 @@
+/* home.css */
+.weather-card {
+    background: linear-gradient(to bottom, #1E90FF, #D3D3D3);
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 80%;
+    font-weight: 500;
+    color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .weather-card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .weather-card h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .weather-card .left-section {
+    text-align: left;
+  }
+  
+  .weather-card .temperature {
+    font-size: 2.7em;
+    margin: 0;
+  }
+  
+  .weather-card .right-section {
+    text-align: right;
+  }
+  
+  .weather-card .weather-info {
+    display: inline-block;
+    text-align: center; 
+    text-align: center;/* Hace que la imagen y la descripción estén en línea */
+  }
+  
+  .weather-card .weather-info img {
+    width: 60px;
+    margin-left: 15px;
+   align-items: center;
+  }
+  
+  .weather-card .temperature-range {
+    display: inline-block; /* Hace que los valores máximo y mínimo estén en línea */
+  }
+  
+  .weather-card .temperature-range p {
+    font-size: 1.2em;
+    margin: 8px 0;
+  }
+  
+  .loading-message, .error-message {
+    font-size: 1.2em;
+    color: #ff0000;
+    text-align: center;
+  }
+  

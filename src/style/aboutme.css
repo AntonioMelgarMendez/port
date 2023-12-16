@@ -1,6 +1,6 @@
 .marginCalendar{
-  margin-top: 30px;
-  margin-bottom:30px;
+  margin-top: 10px;
+  margin-bottom:10px;
 }/* aboutme.css */
 .imagecontent{
   border-radius: 50%;
@@ -54,7 +54,7 @@
   color:rgba(255, 255, 255, 0.9); /* Color de gris más claro */
   font-size: 1em;
   line-height: 1.5;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 
 .aboutme-description1 {

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/port/static/css/main.7a614030.css",
-    "main.js": "/port/static/js/main.ef435cab.js",
+    "main.css": "/port/static/css/main.060c19bd.css",
+    "main.js": "/port/static/js/main.e5fd4767.js",
     "static/js/496.982cc2b7.chunk.js": "/port/static/js/496.982cc2b7.chunk.js",
     "static/media/spiderman.png": "/port/static/media/spiderman.b791d34406fe356ffbef.png",
     "static/media/profile.png": "/port/static/media/profile.ddf8c2c91425250df81d.png",
@@ -29,12 +29,12 @@
     "static/media/html.png": "/port/static/media/html.ff3cf75e3b7cbb4ea77c.png",
     "static/media/js.png": "/port/static/media/js.266bd9fb2663dcc057b4.png",
     "index.html": "/port/index.html",
-    "main.7a614030.css.map": "/port/static/css/main.7a614030.css.map",
-    "main.ef435cab.js.map": "/port/static/js/main.ef435cab.js.map",
+    "main.060c19bd.css.map": "/port/static/css/main.060c19bd.css.map",
+    "main.e5fd4767.js.map": "/port/static/js/main.e5fd4767.js.map",
     "496.982cc2b7.chunk.js.map": "/port/static/js/496.982cc2b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a614030.css",
-    "static/js/main.ef435cab.js"
+    "static/css/main.060c19bd.css",
+    "static/js/main.e5fd4767.js"
   ]
 }

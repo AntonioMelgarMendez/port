@@ -1,0 +1,64 @@
+/* SimpleCalendar.css */
+.simple-calendar {
+    max-width: 250px; /* Reduce el ancho máximo para ocupar menos espacio */
+    margin: auto;
+    font-family: 'Arial', sans-serif;
+    background: rgba(255, 255, 255, 0.9);
+    margin: auto;
+    padding: 10px; /* Añade un poco de espacio alrededor del calendario */
+  }
+  
+  .calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .calendar-header button {
+    background: #3498db; /* Color especial para los botones */
+    color: #fff; /* Texto en blanco */
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px; /* Ajusta el relleno de los botones */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  .calendar-body {
+    /* Ajustes básicos para la cuadrícula */
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columnas para los días de la semana */
+    gap: 5px;
+    text-align: center;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+  }
+  
+  .grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer; /* Agrega un cursor al pasar el mouse */
+  }
+  
+  .today {
+    background-color: #d64040; /* Resalta el día actual */
+  }
+  
+  .other-month {
+    color: #999; /* Color gris para los días de otros meses */
+  }
+  
+  .grid-item:hover {
+    background-color: #e6f7ff; /* Cambia el color de fondo al pasar el mouse */
+  }
+  

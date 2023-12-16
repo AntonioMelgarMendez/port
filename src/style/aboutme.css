@@ -1,29 +1,92 @@
-/* aboutme.css */
-
+.marginCalendar{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}/* aboutme.css */
 .aboutme-container {
-    background-color: #f8f8f8;
-    padding: 50px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-  }
-  
-  .aboutme-content {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .aboutme-title {
-    color: #333;
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .aboutme-description {
-    color: #666;
-    font-size: 1.2em;
-    line-height: 1.5;
-    margin-bottom: 15px;
-  }
-  
+  background-color: rgba(0, 0, 0,1);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 80%;
+  height: 100%; /* Ajusta el ancho del contenedor según tus preferencias */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color:rgba(255, 255, 255, 0.9);
+}
+
+.aboutme-content {
+  max-width: 400px;
+  margin: auto;
+  text-align: left;
+}
+.profile-image-container {
+  text-align: center; /* Centra la imagen */
+}
+
+.profile-image1 {
+  width: 200px;
+  height: auto;
+  border-radius: 10%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.aboutme-title {
+  color:rgba(255, 255, 255, 0.9);
+  font-size: 1.5em;
+
+  text-align: center; /* Reduce el espacio entre el título y el subtitulo */
+}
+
+.aboutme-description {
+  color:rgba(255, 255, 255, 0.9); /* Color de gris más claro */
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.aboutme-description1 {
+  color:rgba(255, 255, 255, 0.9);/* Color de gris más claro */
+  font-size: 1em;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.aboutme-description-top {
+  color:rgba(255, 255, 255, 0.9); /* Color de gris más claro */
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: underline;
+}
+.aboutme-description-top:hover{
+cursor: pointer;
+color:#4d4d4d ;
+}
+.download-cv {
+  text-decoration: underline; /* Añade subrayado al texto */
+  cursor: pointer; /* Muestra el cursor como puntero al pasar por encima */
+  color: #333; /* Color de texto para que sea visible */
+  float: right; /* Alinea el texto a la derecha */
+  font-size: 0.8em; /* Tamaño más pequeño para Download CV */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end; /* Alinea los iconos a la derecha */
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 20px; /* Tamaño más pequeño para los iconos */
+  height: 20px;
+}

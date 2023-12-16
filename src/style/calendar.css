@@ -1,64 +1,109 @@
-/* SimpleCalendar.css */
+/* calendar.css */
 .simple-calendar {
-    max-width: 250px; /* Reduce el ancho máximo para ocupar menos espacio */
-    margin: auto;
-    font-family: 'Arial', sans-serif;
-    background: rgba(255, 255, 255, 0.9);
-    margin: auto;
-    padding: 10px; /* Añade un poco de espacio alrededor del calendario */
-  }
-  
-  .calendar-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .calendar-header button {
-    background: #3498db; /* Color especial para los botones */
-    color: #fff; /* Texto en blanco */
-    border: none;
-    cursor: pointer;
-    padding: 5px 10px; /* Ajusta el relleno de los botones */
-    border-radius: 5px; /* Bordes redondeados */
-  }
-  
-  .calendar-body {
-    /* Ajustes básicos para la cuadrícula */
-    display: grid;
-    grid-template-columns: repeat(7, 1fr); /* 7 columnas para los días de la semana */
-    gap: 5px;
-    text-align: center;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
-    text-align: center;
-  }
-  
-  .grid-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30px;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer; /* Agrega un cursor al pasar el mouse */
-  }
-  
-  .today {
-    background-color: #d64040; /* Resalta el día actual */
-  }
-  
-  .other-month {
-    color: #999; /* Color gris para los días de otros meses */
-  }
-  
-  .grid-item:hover {
-    background-color: #e6f7ff; /* Cambia el color de fondo al pasar el mouse */
-  }
-  
+  max-width: 600px; /* Ajusta el ancho máximo según tus preferencias */
+  margin: 10px; /* Ajusta el margen según tus preferencias */
+  font-family: 'Arial', sans-serif;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10px; /* Añade bordes redondeados */
+  padding: 10px;
+  display: inline-block; /* Permite que dos calendarios se muestren en la misma línea */
+}
+.containergloblal {
+  display: flex;
+  justify-content: center;
+}
+.calendar-header {
+  text-align: left;
+}
+
+.month {
+  color: #242424;
+  font-size: 12px; /* Ajusta el tamaño de la fuente según tus preferencias */
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-right: 5px; /* Ajusta el margen según tus preferencias */
+}
+
+.year {
+  color: #d64040;
+  font-size: 12px; /* Ajusta el tamaño de la fuente según tus preferencias */
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columnas para los días de la semana */
+  gap: 5px;
+  text-align: center;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px; /* Ajusta la altura según tus preferencias */
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.weekdays {
+  background-color: white;
+  color: #737373;
+  font-size: 0.8rem; /* Ajusta el tamaño de la fuente según tus preferencias */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 3px;
+}
+
+
+
+.today {
+  background-color: #d64040;
+  border-radius: 20%;
+  color: white;
+}
+
+.other-month {
+  color: #999;
+}
+
+.grid-item:hover {
+  background-color: #d2d2d2;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.simple-calendar1 {
+  max-width: 600px; /* Ajusta el ancho máximo según tus preferencias */
+  margin: 10px; /* Ajusta el margen según tus preferencias */
+  font-family: 'Arial', sans-serif;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10%;/* Añade bordes redondeados */
+  width: 170px;
+  display: inline-block; /* Permite que dos calendarios se muestren en la misma línea */
+}
+
+.mes {
+  color: #ffffff;
+  font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background-color: #d64040;
+  text-transform: uppercase;
+  text-align: center;
+ 
+}
+
+.numero {
+  font-size: 65px; /* Ajusta el tamaño del número según tus preferencias */
+  text-align: center;
+}
+
+.dia-semana {
+  color: #737373;
+  text-align: center;
+  font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
+}

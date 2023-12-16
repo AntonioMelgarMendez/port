@@ -11,9 +11,7 @@ import Calendar from './calendar';
 const Aboutme = () => {
   return (
     <div>
-      <div className='marginCalendar'>
-       <Calendar/>
-      </div>
+
       <div className="aboutme-container">
         <div className="aboutme-content">
 
@@ -48,7 +46,9 @@ const Aboutme = () => {
       
         </div>
       </div>
-
+      <div className='marginCalendar'>
+       <Calendar/>
+      </div>
     </div>
   );
 };

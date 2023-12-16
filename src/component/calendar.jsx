@@ -1,7 +1,7 @@
 // SimpleCalendar.js
 import React, { useState } from 'react';
 import { format, addMonths, subMonths, startOfMonth, endOfMonth, eachDayOfInterval, isSameMonth, isToday } from 'date-fns';
-import "../style/calendar.css";
+import '../style/calendar.css';
 
 const Calendar = () => {
   const [currentMonth, setCurrentMonth] = useState(new Date());
@@ -21,24 +21,41 @@ const Calendar = () => {
   });
 
   return (
-    <div className="simple-calendar">
-      <div className="calendar-header">
-        <button onClick={prevMonth}>Previous Month</button>
-        <h2>{format(currentMonth, 'MMMM yyyy')}</h2>
-        <button onClick={nextMonth}>Next Month</button>
-      </div>
-
-      <div className="calendar-body">
-        <div className="grid-container">
-          {daysInMonth.map((day) => (
-            <div
-              key={day.toISOString()}
-              className={`grid-item ${isToday(day) ? 'today' : ''} ${isSameMonth(day, currentMonth) ? '' : 'other-month'}`}
-            >
-              {format(day, 'd')}
+    <div className='containergloblal'>
+      <div className="calendar-container">
+        <div className="simple-calendar">
+          <div className="calendar-header">
+            <span className="month">{format(currentMonth, 'MMMM')}</span>
+            <span className="year">{format(currentMonth, 'yyyy')}</span>
+          </div>
+          <div className="calendar-body">
+            <div className="grid-container weekdays">
+              {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, index) => (
+                <div key={index} className="grid-item">
+                  {day}
+                </div>
+              ))}
             </div>
-          ))}
+            <div className="grid-container days">
+              {daysInMonth.map((day) => (
+                <div
+                  key={day.toISOString()}
+                  className={`grid-item ${isToday(day) ? 'today' : ''} ${
+                    isSameMonth(day, currentMonth) ? '' : 'other-month'
+                  }`}
+                >
+                  {format(day, 'd')}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
+      </div>
+      <div className='simple-calendar1'>
+        
+        <h2 className="mes" >{format(currentMonth, 'MMMM')}</h2>
+        <h2 className='numero'>14</h2>
+        <h3 className='dia-semana'>Sunday</h3>
       </div>
     </div>
   );

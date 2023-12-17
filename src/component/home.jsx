@@ -1,4 +1,3 @@
-// WeatherCard.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "../style/home.css";
@@ -11,13 +10,12 @@ const Home = () => {
   useEffect(() => {
     const fetchWeatherData = async () => {
       try {
-        navigator.geolocation.getCurrentPosition(async (position) => {
-          const { latitude, longitude } = position.coords;
+        const position = await getCurrentPosition();
+        const { latitude, longitude } = position.coords;
 
-          const apiKey = 'b099f30634075bf1eab8fbcc8728d842';
-          const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`);
-          setWeatherData(response.data);
-        });
+        const apiKey = 'b099f30634075bf1eab8fbcc8728d842';
+        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`);
+        setWeatherData(response.data);
       } catch (error) {
         console.error('Error fetching weather data:', error);
 
@@ -31,6 +29,12 @@ const Home = () => {
 
     fetchWeatherData();
   }, []);
+
+  const getCurrentPosition = () => {
+    return new Promise((resolve, reject) => {
+      navigator.geolocation.getCurrentPosition(resolve, reject, { timeout: 10000 });
+    });
+  };
 
   if (loading) {
     return <p className="loading-message">Cargando...</p>;

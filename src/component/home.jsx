@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "../style/home.css";
 import Crypto from './crypto';
+
 const Home = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -19,7 +20,8 @@ const Home = () => {
         });
       } catch (error) {
         console.error('Error fetching weather data:', error);
-        // En caso de error, cargar datos predeterminados para San Salvador
+
+        // En caso de error o permisos denegados, cargar datos predeterminados para San Salvador
         const defaultResponse = await axios.get('https://api.openweathermap.org/data/2.5/weather?q=San Salvador&appid=b099f30634075bf1eab8fbcc8728d842');
         setWeatherData(defaultResponse.data);
       } finally {
@@ -35,7 +37,7 @@ const Home = () => {
   }
 
   if (!weatherData) {
-    return <p className="error-message"></p>;
+    return <p className="error-message">Error al cargar los datos meteorológicos.</p>;
   }
 
   const { name, main, weather, main: { temp_max, temp_min } } = weatherData;
@@ -61,9 +63,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-
       </div>
-      <Crypto/>
+      <Crypto />
     </div>
   );
 };

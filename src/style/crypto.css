@@ -30,7 +30,8 @@
   }
   
   .bitcoin-chart-body {
- width: 100%;
+    width: 100%;
     height: 300px;
+    position: relative; /* Asegura que los elementos hijos usen posiciones relativas */
+    z-index: 0; /* Ajusta el z-index según sea necesario, puede necesitar ser mayor o igual a 2 */
   }
-  

@@ -9,9 +9,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  position: relative;
+  z-index: 1;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 0.3s ease-out; /* Agregado para suavizar la transición de opacidad */
 }
 
 .profile-container.active {
@@ -32,7 +34,7 @@
   overflow: hidden;
   width: 350px; /* ajusta según tus necesidades */
   position: fixed; /* Cambiado de 'relative' a 'fixed' */
-  top: 50%; /* Nueva propiedad para centrar verticalmente */
+  top: 25%; /* Nueva propiedad para centrar verticalmente */
   left: 50%; /* Nueva propiedad para centrar horizontalmente */
   transform: translate(-50%, -50%); /* Nueva propiedad para centrar en el medio */
 }

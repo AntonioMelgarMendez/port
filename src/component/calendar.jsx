@@ -20,6 +20,8 @@ const Calendar = () => {
     end: endOfMonth(currentMonth),
   });
 
+  const today = new Date();
+
   return (
     <div className='containergloblal'>
       <div className="calendar-container">
@@ -52,10 +54,9 @@ const Calendar = () => {
         </div>
       </div>
       <div className='simple-calendar1'>
-        
-        <h2 className="mes" >{format(currentMonth, 'MMMM')}</h2>
-        <h2 className='numero'>14</h2>
-        <h3 className='dia-semana'>Sunday</h3>
+        <h2 className="mes">{format(today, 'MMMM')}</h2>
+        <h2 className='numero'>{format(today, 'd')}</h2>
+        <h3 className='dia-semana'>{format(today, 'EEEE')}</h3>
       </div>
     </div>
   );

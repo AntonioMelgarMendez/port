@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "../style/home.css";
-
+import Crypto from './crypto';
 const Home = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -19,6 +19,9 @@ const Home = () => {
         });
       } catch (error) {
         console.error('Error fetching weather data:', error);
+        // En caso de error, cargar datos predeterminados para San Salvador
+        const defaultResponse = await axios.get('https://api.openweathermap.org/data/2.5/weather?q=San Salvador&appid=b099f30634075bf1eab8fbcc8728d842');
+        setWeatherData(defaultResponse.data);
       } finally {
         setLoading(false);
       }
@@ -32,32 +35,35 @@ const Home = () => {
   }
 
   if (!weatherData) {
-    return <p className="error-message">Error al cargar datos del clima.</p>;
+    return <p className="error-message"></p>;
   }
 
-  const { name, main, weather, sys, main: { temp_max, temp_min }, wind } = weatherData;
+  const { name, main, weather, main: { temp_max, temp_min } } = weatherData;
 
   const temperatureCelsius = Math.round(main.temp - 273.15);
 
   return (
-    <div className="weather-card">
-      <div className="header">
-        <div className="left-section">
-          <h2>{name}</h2>
-          <p className="temperature">{temperatureCelsius}°</p>
-        </div>
-        <div className="right-section">
-          <div className="weather-info">
-            <img src={getWeatherIconUrl(weather[0]?.icon)} alt={weather[0]?.description} />
-            <p>{weather[0]?.description}</p>
+    <div>
+      <div className="weather-card">
+        <div className="header">
+          <div className="left-section">
+            <h2>{name}</h2>
+            <p className="temperature">{temperatureCelsius}°</p>
           </div>
-          <div className="temperature-range">
-            <p>H: {Math.round(temp_max - 273.15)}°</p>
-            <p>M: {Math.round(temp_min - 273.15)}°</p>
+          <div className="right-section">
+            <div className="weather-info">
+              <img src={getWeatherIconUrl(weather[0]?.icon)} alt={weather[0]?.description} />
+              <p>{weather[0]?.description}</p>
+            </div>
+            <div className="temperature-range">
+              <p>H: {Math.round(temp_max - 273.15)}°</p>
+              <p>M: {Math.round(temp_min - 273.15)}°</p>
+            </div>
           </div>
         </div>
+
       </div>
-      {/* Agrega aquí el componente para el pronóstico de la semana */}
+      <Crypto/>
     </div>
   );
 };

@@ -1,0 +1,36 @@
+/* styles.css */
+
+.bitcoin-chart-card {
+    background: rgba(255, 255, 255,1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    max-width: 600px;
+    width: 80%;
+
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight:500;
+    margin: 0 auto;
+  }
+  
+  .bitcoin-chart-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .bitcoin-icon {
+    width: 30px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    margin-right: 10px;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+  .bitcoin-chart-body {
+ width: 100%;
+    height: 300px;
+  }
+  

@@ -56,3 +56,12 @@ html {
   background-repeat: no-repeat;
 }
 
+.navbarconfig {
+  transition: transform 0.3s ease;
+}
+
+/* Añade el siguiente estilo para mejorar el rendimiento en dispositivos móviles */
+body {
+  overflow-x: hidden;
+  touch-action: pan-y;
+}

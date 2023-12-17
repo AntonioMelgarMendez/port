@@ -55,8 +55,9 @@ function App() {
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
-    >
-      <Navbar />
+      
+    >  
+      <Navbar currentPage={currentContent}/>
       {showProfile && <Profile onClose={handleCloseProfile} />}
       {currentContent === 'Home' && <Home />}
       {currentContent === 'Skills' && <Skills />}

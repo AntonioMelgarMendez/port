@@ -2,8 +2,17 @@ import React, { useState } from 'react';
 import img from "../sources/lupa.png";
 import "../style/navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ currentPage }) => {
   const [searchText, setSearchText] = useState("");
+  
+  // Mapeo de páginas a textos de marcador de posición
+  const placeholderTexts = {
+    Home: "Home",
+    Skills: "Skills",
+    Project: "Projects",
+    Aboutme: "About Me",
+    // Agrega más páginas según sea necesario
+  };
 
   const handleInputClick = () => {
     // Borrar el texto al hacer clic en la barra de búsqueda
@@ -21,7 +30,7 @@ const Navbar = () => {
             <div className="flex items-center">
               <input
                 type="text"
-                placeholder="Skills"
+                placeholder={placeholderTexts[currentPage]}
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
                 onClick={handleInputClick}

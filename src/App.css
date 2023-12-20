@@ -56,10 +56,7 @@ html {
   background-repeat: no-repeat;
 }
 
-.navbarconfig {
-  transition: transform 0.5s ease; /* Ajusta la duración y el efecto según tus preferencias */
-  overflow-x: hidden; /* Oculta el desbordamiento horizontal para evitar barras de desplazamiento */
-}
+
 
 /* Añade el siguiente estilo para mejorar el rendimiento en dispositivos móviles */
 body {

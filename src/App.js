@@ -71,7 +71,7 @@ function App() {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
       style={{
-        transform: `translateX(${transformValue}px)`,
+       
         background: currentBackground !== null ? totalBackgrounds[currentBackground] : '',
       }}
     >

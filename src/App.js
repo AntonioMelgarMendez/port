@@ -66,14 +66,11 @@ function App() {
 
   return (
     <div
-      className="navbarconfig"
+      
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
-      style={{
-       
-        background: currentBackground !== null ? totalBackgrounds[currentBackground] : '',
-      }}
+
     >
       <Navbar currentPage={currentContent} />
       {showProfile && <Profile onClose={handleCloseProfile} />}

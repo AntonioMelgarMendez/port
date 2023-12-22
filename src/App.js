@@ -13,7 +13,6 @@ function App() {
   const [startX, setStartX] = useState(null);
   const [currentContent, setCurrentContent] = useState('Home');
   const [transformValue, setTransformValue] = useState(0);
-  const [currentBackground, setCurrentBackground] = useState(0); // Nuevo estado para la imagen de fondo actual
 
   const handleTouchStart = (event) => {
     setStartX(event.touches[0].clientX);
@@ -47,30 +46,17 @@ function App() {
   const handleTouchEnd = () => {
     setStartX(null);
     setTransformValue(0);
-
-    // Cambiar la imagen de fondo al finalizar el toque
-    setCurrentBackground((prevBackground) => (prevBackground + 1) % totalBackgrounds.length);
   };
 
   const handleCloseProfile = () => {
     setShowProfile(false);
   };
 
-  const totalBackgrounds = [
-    'url(\'./sources/background.jpg\')',
-    'url(\'./sources/background2.jpg\')',
-    'url(\'./sources/background3.jpg\')',
-    'url(\'./sources/background4.jpg\')',
-    // Agrega más imágenes según sea necesario
-  ];
-
   return (
     <div
-      
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
-
     >
       <Navbar currentPage={currentContent} />
       {showProfile && <Profile onClose={handleCloseProfile} />}
